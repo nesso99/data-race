@@ -26,8 +26,8 @@ func TestDataRace(t *testing.T) {
 
 	wg.Wait()
 	if x == 1000000 {
-		t.Errorf("Failed")
+		t.Errorf("Test Failed")
 	} else {
-		t.Logf("x is %d", x)
+		t.Logf("Test Passed: x is %d", x)
 	}
 }
